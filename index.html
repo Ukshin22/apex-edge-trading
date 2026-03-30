@@ -283,93 +283,99 @@
   </div>
 </section>
 
-<!-- PRICING -->
+<!-- PRICING + PAYMENT SIDE BY SIDE -->
 <section class="pricing" id="pricing">
-  <div class="section-tag">Pricing</div>
-  <h2 class="section-title">Simple, <span style="color:var(--gold)">Transparent Pricing</span></h2>
-  <p class="section-sub">No hidden fees. Cancel anytime. Crypto payments accepted.</p>
-  <div class="pricing-cards">
-    <div class="price-card">
-      <div class="price-name">Monthly Access</div>
-      <div class="price-amount">£99</div>
-      <div class="price-period">per month · cancel anytime</div>
-      <ul class="price-features">
-        <li>Full Apex X1 EA file</li>
-        <li>MT4 & MT5 compatible</li>
-        <li>All major pairs + indices</li>
-        <li>Setup guide included</li>
-        <li>Email support</li>
-        <li>7-day money back guarantee</li>
-      </ul>
-      <a href="mailto:apexedgetrading@protonmail.com?subject=Bot Access - Monthly Plan" class="btn-price btn-price-outline">Get Monthly Access</a>
-    </div>
-    <div class="price-card featured">
-      <div class="price-badge">BEST VALUE</div>
-      <div class="price-name">Lifetime Access</div>
-      <div class="price-amount">£497</div>
-      <div class="price-period">one-time payment · yours forever</div>
-      <ul class="price-features">
-        <li>Full Apex X1 EA file</li>
-        <li>MT4 & MT5 compatible</li>
-        <li>All major pairs + indices</li>
-        <li>All future updates included</li>
-        <li>Priority support</li>
-        <li>Prop firm challenge settings</li>
-        <li>Private Telegram group access</li>
-        <li>7-day money back guarantee</li>
-      </ul>
-      <a href="mailto:apexedgetrading@protonmail.com?subject=Bot Access - Lifetime Plan" class="btn-price btn-price-gold">Get Lifetime Access →</a>
-    </div>
-    <div class="price-card">
-      <div class="price-name">Prop Challenge Bundle</div>
-      <div class="price-amount">£299</div>
-      <div class="price-period">one-time payment</div>
-      <ul class="price-features">
-        <li>Apex X1 EA file</li>
-        <li>Pre-configured for FTMO, Funded Next</li>
-        <li>Max drawdown protection built-in</li>
-        <li>News filter enabled</li>
-        <li>Pass guarantee or full refund</li>
-        <li>30-day support included</li>
-      </ul>
-      <a href="mailto:apexedgetrading@protonmail.com?subject=Prop Challenge Bundle" class="btn-price btn-price-outline">Get Bundle</a>
-    </div>
-  </div>
-</section>
+  <div class="section-tag">Pricing & Payment</div>
+  <h2 class="section-title">Choose Your Plan & <span style="color:var(--gold)">Pay Instantly</span></h2>
+  <p class="section-sub">No hidden fees. Cancel anytime. Pay by crypto — zero fees, instant delivery.</p>
 
-<!-- CRYPTO PAYMENTS -->
-<section class="crypto">
-  <div class="section-tag">Payment Methods</div>
-  <h2 class="section-title">Pay How <span style="color:var(--gold)">You Want</span></h2>
-  <p class="section-sub">Card or crypto — fast, secure, no fuss. Zero fees on crypto payments.</p>
-  <div class="crypto-grid">
-    <div class="crypto-pill">₮ USDT TRC-20</div>
-    <div class="crypto-pill">₮ USDT ERC-20</div>
-    <div class="crypto-pill">💳 Visa / Mastercard</div>
-  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:3rem;align-items:start">
 
-  <div style="margin-top:2rem;background:var(--black);border:1px solid var(--border);border-radius:14px;padding:2rem;max-width:600px">
-    <div style="font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1rem">USDT — TRC-20 Network</div>
-    <div style="display:flex;align-items:center;gap:0.8rem;background:#0D1117;border:1px solid var(--border);border-radius:8px;padding:0.8rem 1rem;margin-bottom:1rem">
-      <span id="usdt-addr" style="font-family:monospace;font-size:0.85rem;color:var(--green);flex:1;word-break:break-all">TBvEviTdRdYrjhapak22Emh4BERgHJVfEG</span>
-      <button onclick="copyAddr()" style="background:var(--gold);color:var(--black);border:none;border-radius:6px;padding:0.4rem 0.9rem;font-weight:700;font-size:0.8rem;cursor:pointer;white-space:nowrap" id="copy-btn">Copy</button>
-    </div>
-    <div style="font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700;margin:1.5rem 0 0.8rem">USDT — ERC-20 Network</div>
-    <div style="display:flex;align-items:center;gap:0.8rem;background:#0D1117;border:1px solid var(--border);border-radius:8px;padding:0.8rem 1rem;margin-bottom:1rem">
-      <span id="erc-addr" style="font-family:monospace;font-size:0.85rem;color:var(--green);flex:1;word-break:break-all">0xDfDB52f984092040AB8DE15B521119F28abbeC6d</span>
-      <button onclick="copyErc()" style="background:var(--gold);color:var(--black);border:none;border-radius:6px;padding:0.4rem 0.9rem;font-weight:700;font-size:0.8rem;cursor:pointer;white-space:nowrap" id="copy-erc-btn">Copy</button>
+    <!-- LEFT: PRICING CARDS -->
+    <div>
+      <div style="font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1.2rem">Choose Your Plan</div>
+      <div style="display:flex;flex-direction:column;gap:1.2rem">
+        <div class="price-card">
+          <div class="price-name">Monthly Access</div>
+          <div class="price-amount">£99</div>
+          <div class="price-period">per month · cancel anytime</div>
+          <ul class="price-features">
+            <li>Full Apex X1 EA file</li>
+            <li>MT4 & MT5 compatible</li>
+            <li>All major pairs + indices</li>
+            <li>Setup guide included</li>
+            <li>Email support</li>
+            <li>7-day money back guarantee</li>
+          </ul>
+          <a href="mailto:apexedgetrading@protonmail.com?subject=Bot Access - Monthly Plan" class="btn-price btn-price-outline">Get Monthly Access</a>
+        </div>
+        <div class="price-card featured">
+          <div class="price-badge">BEST VALUE</div>
+          <div class="price-name">Lifetime Access</div>
+          <div class="price-amount">£497</div>
+          <div class="price-period">one-time payment · yours forever</div>
+          <ul class="price-features">
+            <li>Full Apex X1 EA file</li>
+            <li>MT4 & MT5 compatible</li>
+            <li>All major pairs + indices</li>
+            <li>All future updates included</li>
+            <li>Priority support</li>
+            <li>Prop firm challenge settings</li>
+            <li>Private Telegram group access</li>
+            <li>7-day money back guarantee</li>
+          </ul>
+          <a href="mailto:apexedgetrading@protonmail.com?subject=Bot Access - Lifetime Plan" class="btn-price btn-price-gold">Get Lifetime Access →</a>
+        </div>
+        <div class="price-card">
+          <div class="price-name">Prop Challenge Bundle</div>
+          <div class="price-amount">£299</div>
+          <div class="price-period">one-time payment</div>
+          <ul class="price-features">
+            <li>Apex X1 EA file</li>
+            <li>Pre-configured for FTMO, Funded Next</li>
+            <li>Max drawdown protection built-in</li>
+            <li>News filter enabled</li>
+            <li>Pass guarantee or full refund</li>
+            <li>30-day support included</li>
+          </ul>
+          <a href="mailto:apexedgetrading@protonmail.com?subject=Prop Challenge Bundle" class="btn-price btn-price-outline">Get Bundle</a>
+        </div>
+      </div>
     </div>
 
-    <div style="font-size:0.82rem;color:var(--grey);line-height:1.7">
-      ⚠️ <strong style="color:rgba(255,255,255,0.7)">Send on the correct network.</strong> TRC-20 and ERC-20 addresses above — do not mix them.<br>
-      After sending, email <a href="mailto:apexedgetrading@protonmail.com" style="color:var(--gold)">apexedgetrading@protonmail.com</a> with:
-      <ul style="margin-top:0.5rem;padding-left:1.2rem;color:rgba(255,255,255,0.6)">
-        <li>Your transaction hash / screenshot</li>
-        <li>Which plan you purchased</li>
-        <li>Your email for delivery</li>
-      </ul>
-      <div style="margin-top:0.8rem;color:rgba(255,255,255,0.5)">We'll send your EA file within 30 minutes of confirmation.</div>
+    <!-- RIGHT: PAYMENT -->
+    <div style="position:sticky;top:100px">
+      <div style="font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1.2rem">Pay With Crypto</div>
+
+      <div style="background:var(--black2);border:1px solid var(--border);border-radius:14px;padding:2rem">
+        <div style="display:flex;gap:0.6rem;margin-bottom:1.5rem;flex-wrap:wrap">
+          <span class="crypto-pill" style="font-size:0.8rem;padding:0.4rem 0.9rem">₮ USDT TRC-20</span>
+          <span class="crypto-pill" style="font-size:0.8rem;padding:0.4rem 0.9rem">₮ USDT ERC-20</span>
+        </div>
+
+        <div style="font-size:0.72rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:0.6rem">USDT — TRC-20</div>
+        <div style="display:flex;align-items:center;gap:0.6rem;background:#0D1117;border:1px solid var(--border);border-radius:8px;padding:0.7rem 0.9rem;margin-bottom:1.2rem">
+          <span style="font-family:monospace;font-size:0.78rem;color:var(--green);flex:1;word-break:break-all">TBvEviTdRdYrjhapak22Emh4BERgHJVfEG</span>
+          <button onclick="copyAddr()" id="copy-btn" style="background:var(--gold);color:var(--black);border:none;border-radius:6px;padding:0.35rem 0.8rem;font-weight:700;font-size:0.75rem;cursor:pointer;white-space:nowrap">Copy</button>
+        </div>
+
+        <div style="font-size:0.72rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:0.6rem">USDT — ERC-20</div>
+        <div style="display:flex;align-items:center;gap:0.6rem;background:#0D1117;border:1px solid var(--border);border-radius:8px;padding:0.7rem 0.9rem;margin-bottom:1.5rem">
+          <span style="font-family:monospace;font-size:0.78rem;color:var(--green);flex:1;word-break:break-all">0xDfDB52f984092040AB8DE15B521119F28abbeC6d</span>
+          <button onclick="copyErc()" id="copy-erc-btn" style="background:var(--gold);color:var(--black);border:none;border-radius:6px;padding:0.35rem 0.8rem;font-weight:700;font-size:0.75rem;cursor:pointer;white-space:nowrap">Copy</button>
+        </div>
+
+        <div style="background:rgba(212,175,55,0.07);border:1px solid var(--border);border-radius:10px;padding:1.2rem;font-size:0.82rem;color:rgba(255,255,255,0.7);line-height:1.8">
+          <div style="font-weight:700;color:var(--white);margin-bottom:0.5rem">How to pay:</div>
+          <div>1. Copy the address for your chosen network</div>
+          <div>2. Send the exact amount for your plan</div>
+          <div>3. Email <a href="mailto:apexedgetrading@protonmail.com" style="color:var(--gold)">apexedgetrading@protonmail.com</a> with your TX hash + plan name</div>
+          <div>4. Receive your EA file within 30 minutes ✓</div>
+          <div style="margin-top:0.8rem;font-size:0.75rem;color:var(--grey)">⚠️ TRC-20 and ERC-20 are different networks. Use the correct address.</div>
+        </div>
+      </div>
     </div>
+
   </div>
 </section>
 
