@@ -354,8 +354,14 @@
       <span id="usdt-addr" style="font-family:monospace;font-size:0.85rem;color:var(--green);flex:1;word-break:break-all">TBvEviTdRdYrjhapak22Emh4BERgHJVfEG</span>
       <button onclick="copyAddr()" style="background:var(--gold);color:var(--black);border:none;border-radius:6px;padding:0.4rem 0.9rem;font-weight:700;font-size:0.8rem;cursor:pointer;white-space:nowrap" id="copy-btn">Copy</button>
     </div>
+    <div style="font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700;margin:1.5rem 0 0.8rem">USDT — ERC-20 Network</div>
+    <div style="display:flex;align-items:center;gap:0.8rem;background:#0D1117;border:1px solid var(--border);border-radius:8px;padding:0.8rem 1rem;margin-bottom:1rem">
+      <span id="erc-addr" style="font-family:monospace;font-size:0.85rem;color:var(--green);flex:1;word-break:break-all">0xDfDB52f984092040AB8DE15B521119F28abbeC6d</span>
+      <button onclick="copyErc()" style="background:var(--gold);color:var(--black);border:none;border-radius:6px;padding:0.4rem 0.9rem;font-weight:700;font-size:0.8rem;cursor:pointer;white-space:nowrap" id="copy-erc-btn">Copy</button>
+    </div>
+
     <div style="font-size:0.82rem;color:var(--grey);line-height:1.7">
-      ⚠️ <strong style="color:rgba(255,255,255,0.7)">TRC-20 network only.</strong> Do not send on ERC-20 or BEP-20.<br>
+      ⚠️ <strong style="color:rgba(255,255,255,0.7)">Send on the correct network.</strong> TRC-20 and ERC-20 addresses above — do not mix them.<br>
       After sending, email <a href="mailto:apexedgetrading@protonmail.com" style="color:var(--gold)">apexedgetrading@protonmail.com</a> with:
       <ul style="margin-top:0.5rem;padding-left:1.2rem;color:rgba(255,255,255,0.6)">
         <li>Your transaction hash / screenshot</li>
@@ -431,12 +437,17 @@ if(tbody){
   }).join('');
 }
 
-// Copy address
+// Copy addresses
 function copyAddr(){
   navigator.clipboard.writeText('TBvEviTdRdYrjhapak22Emh4BERgHJVfEG');
   const btn = document.getElementById('copy-btn');
-  btn.textContent = 'Copied ✓';
-  btn.style.background = '#00FF88';
+  btn.textContent = 'Copied ✓'; btn.style.background = '#00FF88';
+  setTimeout(() => { btn.textContent = 'Copy'; btn.style.background = 'var(--gold)'; }, 2000);
+}
+function copyErc(){
+  navigator.clipboard.writeText('0xDfDB52f984092040AB8DE15B521119F28abbeC6d');
+  const btn = document.getElementById('copy-erc-btn');
+  btn.textContent = 'Copied ✓'; btn.style.background = '#00FF88';
   setTimeout(() => { btn.textContent = 'Copy'; btn.style.background = 'var(--gold)'; }, 2000);
 }
 
