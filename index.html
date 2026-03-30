@@ -341,16 +341,30 @@
 <section class="crypto">
   <div class="section-tag">Payment Methods</div>
   <h2 class="section-title">Pay How <span style="color:var(--gold)">You Want</span></h2>
-  <p class="section-sub">Card or crypto — fast, secure, no fuss.</p>
+  <p class="section-sub">Card or crypto — fast, secure, no fuss. Zero fees on crypto payments.</p>
   <div class="crypto-grid">
-    <div class="crypto-pill">₿ Bitcoin (BTC)</div>
-    <div class="crypto-pill">Ξ Ethereum (ETH)</div>
-    <div class="crypto-pill">₮ Tether (USDT)</div>
-    <div class="crypto-pill">◎ Solana (SOL)</div>
+    <div class="crypto-pill">₮ USDT (TRC-20)</div>
     <div class="crypto-pill">💳 Visa / Mastercard</div>
     <div class="crypto-pill">🏦 Bank Transfer</div>
   </div>
-  <p style="margin-top:1.5rem;font-size:0.85rem;color:var(--grey)">To pay via crypto — email <a href="mailto:apexedgetrading@protonmail.com" style="color:var(--gold)">apexedgetrading@protonmail.com</a> with your chosen plan and we'll send a wallet address instantly.</p>
+
+  <div style="margin-top:2rem;background:var(--black);border:1px solid var(--border);border-radius:14px;padding:2rem;max-width:600px">
+    <div style="font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1rem">USDT — TRC-20 Network</div>
+    <div style="display:flex;align-items:center;gap:0.8rem;background:#0D1117;border:1px solid var(--border);border-radius:8px;padding:0.8rem 1rem;margin-bottom:1rem">
+      <span id="usdt-addr" style="font-family:monospace;font-size:0.85rem;color:var(--green);flex:1;word-break:break-all">TBvEviTdRdYrjhapak22Emh4BERgHJVfEG</span>
+      <button onclick="copyAddr()" style="background:var(--gold);color:var(--black);border:none;border-radius:6px;padding:0.4rem 0.9rem;font-weight:700;font-size:0.8rem;cursor:pointer;white-space:nowrap" id="copy-btn">Copy</button>
+    </div>
+    <div style="font-size:0.82rem;color:var(--grey);line-height:1.7">
+      ⚠️ <strong style="color:rgba(255,255,255,0.7)">TRC-20 network only.</strong> Do not send on ERC-20 or BEP-20.<br>
+      After sending, email <a href="mailto:apexedgetrading@protonmail.com" style="color:var(--gold)">apexedgetrading@protonmail.com</a> with:
+      <ul style="margin-top:0.5rem;padding-left:1.2rem;color:rgba(255,255,255,0.6)">
+        <li>Your transaction hash / screenshot</li>
+        <li>Which plan you purchased</li>
+        <li>Your email for delivery</li>
+      </ul>
+      <div style="margin-top:0.8rem;color:rgba(255,255,255,0.5)">We'll send your EA file within 30 minutes of confirmation.</div>
+    </div>
+  </div>
 </section>
 
 <!-- FAQ -->
