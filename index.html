@@ -431,6 +431,15 @@ if(tbody){
   }).join('');
 }
 
+// Copy address
+function copyAddr(){
+  navigator.clipboard.writeText('TBvEviTdRdYrjhapak22Emh4BERgHJVfEG');
+  const btn = document.getElementById('copy-btn');
+  btn.textContent = 'Copied ✓';
+  btn.style.background = '#00FF88';
+  setTimeout(() => { btn.textContent = 'Copy'; btn.style.background = 'var(--gold)'; }, 2000);
+}
+
 // FAQ
 document.querySelectorAll('.faq-item').forEach(item => {
   item.querySelector('.faq-q').addEventListener('click', () => item.classList.toggle('open'));
